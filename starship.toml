@@ -1,0 +1,48 @@
+scan_timeout = 10
+
+add_newline = true
+
+format = """
+╭─$username$directory
+│  $python$cmd_duration
+╰─$character
+"""
+
+[username]
+show_always = true
+format = "[$user](#c8c093) "
+
+[hostname]
+disabled=true
+
+[directory]
+format = "[$path](#7fb4ca) "
+truncation_length = 3
+
+[git_branch]
+symbol = " "
+style = "#98bb6c"
+
+[git_status]
+style = "#e6c384"
+
+[cmd_duration]
+format = "⏱ [$duration](#ffa066) "
+min_time = 500
+
+[character]
+success_symbol = "[❯](bold #7e9cd8)"
+error_symbol = "[❯](bold #ff5d62)"
+
+[python]
+format = " [$version](#98bb6c) "
+version_format = "${raw}"
+
+[nodejs]
+symbol = " "
+style = "#7e9cd8"
+
+[rust]
+symbol = "🦀 "
+style = "#ffa066"
+

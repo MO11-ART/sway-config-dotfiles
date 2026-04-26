@@ -1,0 +1,40 @@
+* {
+    font-family: "JetBrains Mono";
+    font-size: 13px;
+    border: none;
+}
+
+window#waybar {
+    background: rgba(31, 31, 40, 0.55);
+    border-radius: 12px;
+    margin: 6px 10px 0 10px;
+}
+
+#workspaces button {
+    padding: 0 6px;
+    color: #dcd7ba;
+    background: transparent;
+    border: none;
+}
+
+#workspaces button.focused {
+    color: #dcd7ba;
+}
+
+#clock,
+#memory,
+#network,
+#battery,
+#pulseaudio,
+#cpu,
+#language,
+#mpris,
+#custom-power {
+    padding: 0 10px;
+    color: #dcd7ba;
+margin-right: 10px;
+}
+
+#clock {
+    letter-spacing: 0.5px;
+}
